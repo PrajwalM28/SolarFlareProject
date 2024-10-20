@@ -17,9 +17,7 @@ The project uses an LSTM (Long Short-Term Memory) model, well-suited for time-se
 
 - **Loss Function**: Mean Squared Error (MSE)
   
-  \[
-  \text{MSE} = \frac{1}{n} \sum_{i=1}^n (\hat{y}_i - y_i)^2
-  \]
+  $$\text{MSE} = \frac{1}{n} \sum_{i=1}^n (\hat{y}_i - y_i)^2$$
   
 - **Optimizer**: Adam with a learning rate of 0.001.
 
@@ -29,7 +27,7 @@ The model is trained over 50 epochs with early stopping to avoid overfitting, us
 
 Key analyses include:
 
-- **Correlation Coefficient** between sunspot numbers and flare occurrences: \( r = 0.87 \)
+- **Correlation Coefficient** between sunspot numbers and flare occurrences: $r = 0.87$
 - **Feature Importance**: Magnetic field strength is the most predictive feature, contributing to 65% of the model’s decision-making process.
 - **Visualization**: Heatmaps and time-series plots illustrate the correlation between different solar parameters and flare events.
 
